@@ -14,16 +14,10 @@ import java.util.ArrayList;
 public class Mushroom {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @OneToOne
-    private MushroomCoordinates mushroomCoordinates;
-//    private ArrayList<MushroomCoordinates2> mushroomCoordinates;
-
+    private int id;
+    private double latitude;
+    private double longitude;
     private String comment;
 }
 
-class MushroomCoordinates2 {
-    private double latitude;
-    private double longitude;
-}
+
